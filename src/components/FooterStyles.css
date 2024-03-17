@@ -1,0 +1,156 @@
+.era{
+    color: white;
+
+}
+.lang{
+    display: flex;
+}
+.footer{
+    width: 100%;
+    padding: 6rem 0;
+    background-color: rgba(19, 19, 19, 0.8);
+}
+.footer-container{
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+.left{
+    height: 1005;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.mail{
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.mail-logo{
+    align-content: center;
+}
+.right{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.social{
+    margin-top: 4.56rem;
+    position: absolute;
+}
+.social-link:hover{
+    cursor: pointer;
+    margin:0.19rem 0 ;
+    size: 150%;
+    transition: 0.5s;
+}
+h4{
+    font-size: 1.2rem;
+    padding-bottom: 0.7rem;
+}
+.era{
+    display: flex;
+    padding: 0.296rem 1.2rem;
+    border: 1px solid white;
+    border-radius: 40px;
+    /* margin: auto; */
+}
+.era:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    font-size: 1.1rem;
+    max-width: 200px;
+    padding: 0.296rem 6rem;
+    transition: 1.9s;
+    grid-template-rows: 1fr;
+    display:grid;
+    gap: 0;
+    width: 100%;
+}
+.era:hover lang{
+    padding-right: 100px;
+    transition: 1s;
+}
+.era:hover .lang-logo{
+    display: none;
+}
+.era-left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.era-mid{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.era-right{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.era-right .era{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.entire-right{
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width : 640px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+    }
+    .era {
+        display: flex;
+        padding: 0.296rem 1rem;
+        border: 1px solid white;
+        border-radius: 40px;
+    }
+    
+    .entire-right{
+        display: flex;
+        flex-direction: column;
+    }
+    .social{
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+    }
+    .era:hover {
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.9);
+        color: black;
+        font-size: 1.1rem;
+        max-width: 200px;
+        padding: 0.296rem 10.599rem;
+        transition: 1.9s;
+        grid-template-rows: 1fr;
+        display: grid;
+        gap: 0;
+        width: 100%;
+    }
+        .social-link{
+            margin-bottom: 100px;
+        }
+    
+        .era:hover lang {
+            padding-right: 100px;
+            transition: 1s;
+        }
+    
+        .era:hover .lang-logo {
+            display: none;
+        }
+    .right{
+        margin-top: 100px;
+    }
+}
